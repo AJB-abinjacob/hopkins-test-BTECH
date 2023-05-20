@@ -150,7 +150,46 @@ function calculate() {
   cell3.innerHTML = g_input;
   cell4.innerHTML = g_output;
   cell5.innerHTML = g_efficiency;
+
+  // graph
+
+  // const xValues = [50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 150];
+  // const yValues = [7, 8, 8, 9, 9, 9, 10, 11, 14, 14, 15];
+
+  // new Chart("myChart", {
+  //   type: "line",
+  //   data: {
+  //     labels: xValues,
+  //     datasets: [
+  //       {
+  //         backgroundColor: "rgba(0,0,255,1.0)",
+  //         borderColor: "rgba(0,0,255,0.1)",
+  //         data: yValues,
+  //       },
+  //     ],
+  //   },
+  //   options: {
+  //     legend: { display: false },
+  //   },
+  // });
 }
+
+// function deleteRow(ele){
+//   var table = $('#tabularColumn')[0];
+//   var rowCount = table.rows.length;
+//   if(rowCount <= 1){
+//       alert("There is no row available to delete!");
+//       return;
+//   }
+//   if(ele){
+//       //delete specific row
+//       $(ele).parent().parent().remove();
+//   }
+//   else{
+//       //delete last row
+//       table.deleteRow(rowCount-1);
+//   }
+// }
 // function myDeleteFunction() {
 //   document.getElementById("tabularColumn").deleteRow(1);
 //   document.getElementById("tabulation").deleteRow(2);
