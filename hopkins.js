@@ -128,7 +128,7 @@ function calculate() {
   var cell5 = row.insertCell(4);
 
   cell1.innerHTML = motorFieldCuLoss;
-  cell2.innerHTML = 00000;
+  cell2.innerHTML = motorInput-(motorInput - motorLoss);
   cell3.innerHTML = motorInput;
   cell4.innerHTML = motorInput - motorLoss;
   cell5.innerHTML = m_efficiency;
@@ -146,7 +146,7 @@ function calculate() {
   var cell5 = row.insertCell(4);
 
   cell1.innerHTML = generatorFieldCuLoss;
-  cell2.innerHTML = 00000;
+  cell2.innerHTML = g_input-g_output;
   cell3.innerHTML = g_input;
   cell4.innerHTML = g_output;
   cell5.innerHTML = g_efficiency;
